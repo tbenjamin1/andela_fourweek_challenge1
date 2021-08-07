@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  align-items: center;
+  margin: 5rem auto;
+}
+.card_top img {
+  width: 30%;
+  height: 100%;
+  display: block;
+}
+.container {
+  display: flex;
+  margin: 10rem auto;
+
+  width: 70%;
+
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.822);
+  border-radius: 10px;
+}
+
+.container .card1_wrap {
+  height: 35rem;
+  cursor: pointer;
+  background: hsl(31, 77%, 52%);
+}
+.container .card2_wrap {
+  cursor: pointer;
+  height: 35rem;
+  background: hsl(184, 100%, 22%);
+}
+.container .card3_wrap {
+  height: 35rem;
+  cursor: pointer;
+  background: hsl(179, 100%, 13%);
+}
+.card_wrap.card_item {
+  width: 25px;
+  padding: 10px;
+}
+.card_wrap.card_inner {
+  background: rgb(255, 255, 255);
+}
+.card_top {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-top: 2rem;
+
+  margin-bottom: 1rem;
+}
+.card_bottom {
+  padding: 15px;
+}
+.card_info {
+  padding: 15px;
+  margin: 10px 0;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  letter-spacing: 1px;
+}
+.card_button {
+  align-items: center;
+}
+button {
+  background: transparent;
+  border-radius: 5rem;
+  border: 2px solid hsl(0, 0%, 95%);
+  color:hsl(0, 0%, 95%);
+  width: 6rem;
+  height: 2rem;
+}
+button:hover {
+  background: hsl(0, 0%, 95%);
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    margin: 10rem auto;
+  }
+
+  .container .card1_wrap,
+  .container .card2_wrap,
+  .container .card3_wrap {
+    height: 30rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: hsl(0, 0%, 95%);
+  }
+  .card_top {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 1rem;
+  }
+
+  .title {
+    text-transform: uppercase;
+
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 95%);
+  }
+  p {
+    font-size: 15px;
+  }
+}
